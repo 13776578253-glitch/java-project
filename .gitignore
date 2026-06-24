@@ -1,0 +1,33 @@
+# Java build output
+/build/
+/bin/
+/target/
+*.class
+
+# Eclipse local workspace metadata
+/.metadata/
+/.recommenders/
+*.tmp
+*.bak
+
+# Local server/runtime output
+/Servers/
+/.server/
+/.deployables/
+/work/
+/temp/
+/logs/
+*.log
+
+# Packaged artifacts
+*.war
+*.ear
+*.jar
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
