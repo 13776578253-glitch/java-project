@@ -15,73 +15,57 @@
     <servlet-class>buxingchen.FrontControllerServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
+  <servlet>
+    <servlet-name>userServlet</servlet-name>
+    <servlet-class>chenqingyuan.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>bodyServlet</servlet-name>
+    <servlet-class>chenqingyuan.BodyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>chronicServlet</servlet-name>
+    <servlet-class>chenqingyuan.ChronicServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>lifestyleServlet</servlet-name>
+    <servlet-class>buxingchen.LifestyleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>reportServlet</servlet-name>
+    <servlet-class>tanghaoli.ReportServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>adminServlet</servlet-name>
+    <servlet-class>buxingchen.AdminServlet</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/home</url-pattern>
+    <url-pattern>/page</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/login</url-pattern>
+    <servlet-name>userServlet</servlet-name>
+    <url-pattern>/auth</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/register</url-pattern>
+    <servlet-name>bodyServlet</servlet-name>
+    <url-pattern>/body</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/profile</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/record/add</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/record/list</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/sport</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/sleep</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
+    <servlet-name>chronicServlet</servlet-name>
     <url-pattern>/chronic</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/analysis</url-pattern>
+    <servlet-name>lifestyleServlet</servlet-name>
+    <url-pattern>/lifestyle</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
+    <servlet-name>reportServlet</servlet-name>
     <url-pattern>/report</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/prediction</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/ai</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/admin/login</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/admin/home</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/admin/users</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>frontControllerServlet</servlet-name>
-    <url-pattern>/admin/statistics</url-pattern>
+    <servlet-name>adminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
   </servlet-mapping>
 </web-app>

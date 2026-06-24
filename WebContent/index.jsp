@@ -18,28 +18,28 @@
                 数据分析、智能建议和管理员统计展开。
             </p>
             <div class="action-row">
-                <a class="button primary" href="${pageContext.request.contextPath}/login">用户登录</a>
-                <a class="button" href="${pageContext.request.contextPath}/register">用户注册</a>
-                <a class="button" href="${pageContext.request.contextPath}/admin/login">管理员入口</a>
+                <a class="button primary" href="${pageContext.request.contextPath}/auth?action=loginPage">用户登录</a>
+                <a class="button" href="${pageContext.request.contextPath}/auth?action=registerPage">用户注册</a>
+                <a class="button" href="${pageContext.request.contextPath}/admin?action=home">管理员入口</a>
             </div>
         </div>
     </section>
     <section class="module-grid">
-        <a class="module-card" href="${pageContext.request.contextPath}/profile">
-            <strong>健康档案</strong>
-            <span>维护年龄、性别、身高、基础情况和慢性病记录。</span>
+        <a class="module-card" href="${pageContext.request.contextPath}/page?view=body">
+            <strong>体重体脂</strong>
+            <span>录入、历史记录、BMI 图表、趋势预测、AI 建议和参考文献。</span>
         </a>
-        <a class="module-card" href="${pageContext.request.contextPath}/record/add">
-            <strong>数据录入</strong>
-            <span>录入体重、体脂、血压、血糖、运动和睡眠等数据。</span>
+        <a class="module-card" href="${pageContext.request.contextPath}/page?view=chronic">
+            <strong>慢性病指标</strong>
+            <span>血压、血糖、血脂、心率的记录、波动分析和异常提醒。</span>
         </a>
-        <a class="module-card" href="${pageContext.request.contextPath}/record/list">
-            <strong>历史查询</strong>
-            <span>按日期和指标类型查看健康数据历史记录。</span>
+        <a class="module-card" href="${pageContext.request.contextPath}/page?view=lifestyle">
+            <strong>运动睡眠</strong>
+            <span>运动和睡眠录入、趋势图表、恢复状态和生活方式建议。</span>
         </a>
-        <a class="module-card" href="${pageContext.request.contextPath}/analysis">
-            <strong>健康分析</strong>
-            <span>展示 BMI、基础代谢、异常提醒和阶段性分析。</span>
+        <a class="module-card" href="${pageContext.request.contextPath}/page?view=report">
+            <strong>健康报告</strong>
+            <span>多主题汇总、阶段性报告、跨指标分析和综合建议。</span>
         </a>
     </section>
 </main>
